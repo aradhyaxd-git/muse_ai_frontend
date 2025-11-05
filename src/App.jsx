@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+// import Dashboard from "./pages/Dashboard";
 import WriteArticle from "./pages/WriteArticle";
-import BlogTitles from "./pages/BlogTitles.jsx";
+import BlogTitles from "./pages/BlogTitles";
 import GenerateImages from "./pages/GenerateImages";
 import RemoveBackground from "./pages/RemoveBackground";
-// import Dashboard from "./pages/Dashboard";
 import RemoveObject from "./pages/RemoveObject";
 import ReviewResume from "./pages/ReviewResume";
 // import Community from "./pages/Community";
