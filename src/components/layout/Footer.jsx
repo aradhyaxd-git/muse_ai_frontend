@@ -1,64 +1,75 @@
 import React from "react";
 import { assets } from "../../assets/assets";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-700">
+    <footer className="bg-[#00008B] text-white">
       {/* === Main Footer === */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row justify-between items-start border-b border-gray-200 gap-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row justify-between gap-16 border-b border-gray-600">
         
-        {/* === Left: Logo + Description === */}
+        {/* === Left: Big Text + Email + Socials === */}
         <div className="flex-1">
-          <img
-            src={assets.logo}
-            alt="Muse.ai Logo"
-            className="h-12 mb-6"
-          />
-          <p className="text-gray-600 text-base leading-relaxed max-w-md">
-            Experience the power of AI with{" "}
-            <span className="text-gray-900 font-semibold">Muse.ai</span>. <br />
-            Transform your content creation with our suite of premium AI tools —
-            write articles, generate images, and enhance your workflow.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-6">
+            We build AI tools.<br /> 
+            Sign up to explore the latest innovations.
+          </h2>
+
+          <form className="flex items-center max-w-md border-b border-gray-400 pb-2 mb-6">
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="flex-grow bg-transparent text-white placeholder-gray-300 focus:outline-none text-lg"
+            />
+            <button
+              type="submit"
+              className="text-white hover:text-gray-300 text-xl"
+            >
+              ✉️
+            </button>
+          </form>
+
+          {/* === Social Icons === */}
+          <div className="flex space-x-6 text-xl">
+            <a href="#" className="hover:text-gray-300 transition">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-gray-300 transition">
+              <FaTwitter />
+            </a>
+            <a href="#" className="hover:text-gray-300 transition">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-gray-300 transition">
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
 
         {/* === Right: Company Links === */}
-        <div className="flex flex-col">
-          <h3 className="text-gray-900 font-semibold mb-5 text-xl">Company</h3>
-          <ul className="space-y-3 text-base text-gray-600">
-            <li>
-              <a href="#" className="hover:text-[#2563EB] transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#2563EB] transition">
-                About us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#2563EB] transition">
-                Contact us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#2563EB] transition">
-                Privacy policy
-              </a>
-            </li>
+        <div className="flex flex-wrap gap-16 md:gap-24">
+          <ul className="space-y-3 text-sm tracking-wide">
+            <li><a href="#" className="hover:text-gray-300">Home</a></li>
+            <li><a href="#" className="hover:text-gray-300">About Us</a></li>
+            <li><a href="#" className="hover:text-gray-300">Contact</a></li>
+            <li><a href="#" className="hover:text-gray-300">Privacy Policy</a></li>
+          </ul>
+          <ul className="space-y-3 text-sm tracking-wide">
+            <li><a href="#" className="hover:text-gray-300">Terms of Service</a></li>
+            <li><a href="#" className="hover:text-gray-300">Careers</a></li>
+            <li><a href="#" className="hover:text-gray-300">FAQs</a></li>
+            <li><a href="#" className="hover:text-gray-300">Support</a></li>
           </ul>
         </div>
       </div>
 
       {/* === Bottom Bar === */}
-      <div className="border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row justify-between items-center text-base text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Muse.ai. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">
-            Made with <span className="text-red-500">❤️</span> by{" "}
-            <span className="text-[#2563EB] font-medium">Team VA</span>
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
+        <p>&copy; {new Date().getFullYear()} Muse.ai. All rights reserved.</p>
+        <p className="mt-2 md:mt-0">
+          Made with <span className="text-red-500">❤️</span> by{" "}
+          <span className="text-white font-medium">Team VA</span>
+        </p>
       </div>
     </footer>
   );
