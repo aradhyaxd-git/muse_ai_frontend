@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="YOUR_BANNER_IMAGE_URL" width="100%" alt="Muse.ai Banner Image" />
+  <img src="../frontend/src/assets/logo.svg" width="100%" alt="Muse.ai Banner Image" />
 
-  <h1><b>Muse.ai</b></h1>
-  <p><i>Your AI-powered content creation powerhouse</i></p>
+  <h1><b>Muse.ai</b></h1>
+  <p><i>Your AI-powered content creation powerhouse</i></p>
 
-    <img src="https://img.shields.io/github/stars/aradhyaxd-git/muse_ai_frontend/muse.ai?style=flat-square" alt="GitHub Stars" />
-  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-blue?style=flat-square" alt="Frontend: React + Vite" />
-  <img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-green?style=flat-square" alt="Backend: Node.js + Express" />
-  <img src="https://img.shields.io/badge/Database-Neon%20PostgreSQL-orange?style=flat-square" alt="Database: Neon PostgreSQL" />
-  <img src="https://img.shields.io/badge/Auth-Clerk-purple?style=flat-square" alt="Auth: Clerk" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License: MIT" />
+  <img src="https://img.shields.io/github/stars/aradhyaxd-git/muse_ai_frontend/muse.ai?style=flat-square" alt="GitHub Stars" />
+  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-blue?style=flat-square" alt="Frontend: React + Vite" />
+  <img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-green?style=flat-square" alt="Backend: Node.js + Express" />
+  <img src="https://img.shields.io/badge/Database-Neon%20PostgreSQL-orange?style=flat-square" alt="Database: Neon PostgreSQL" />
+  <img src="https://img.shields.io/badge/Auth-Clerk-purple?style=flat-square" alt="Auth: Clerk" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License: MIT" />
 </div>
 
 ---
@@ -41,10 +41,10 @@ Muse.ai is logically split into two service layers. This document serves as the 
 
 <div align="center">
 ### 🧬 **System Architecture Overview**
-<img src="./assets/architecture-overview.png" alt="High-level System Architecture Diagram" width="85%" />
+<img src="../frontend/src/assets/design.png" alt="High-level System Architecture Diagram" width="85%" />
 
 ### 🧬 **Detailed System Design Diagram**
-<img src="./assets/detailed-system-design.png" alt="Detailed Component Interaction Diagram" width="85%" />
+<img src="../frontend/src/assets/highLevelDesign.png" alt="Detailed Component Interaction Diagram" width="85%" />
 </div>
 
 ---
@@ -114,46 +114,65 @@ Follow these steps to get a copy of the project running locally.
 
 ```bash
 git clone [https://github.com/aradhyaxd-git/muse_ai_frontend](https://github.com/aradhyaxd-git/muse_ai_frontend) muse-frontend
-git clone [https://github.com/aradhyaxd-git/muse_ai_backend](https://github.com/aradhyaxd-git/muse_ai_backend) muse-backend
+git clone [https://github.com/aradhyaxd-git/muse_ai_backend](https://github.com/aradhyaxd-git/muse_ai_backend) muse-backend 
+```
 
 
-2. Configure Environment Variables
-Create separate .env files in both the muse-frontend and muse-backend directories.
+### 2. Configure Environment Variables
 
-Component	Variable	Description
-Frontend	VITE_CLERK_PUBLISHABLE_KEY	Clerk Public Key
-VITE_BACKEND_URL	e.g., http://localhost:5000
-Backend	PORT	e.g., 5000
-CLERK_SECRET_KEY	Clerk Secret Key
-NEON_DB_URL	PostgreSQL Connection String
-GEMINI_API_KEY	Google Gemini API Key
-CLIPDROP_API_KEY	ClipDrop API Key
-CLOUDINARY_CLOUD_NAME	Cloudinary Account Name
-CLOUDINARY_API_KEY	Cloudinary API Key
-CLOUDINARY_API_SECRET	Cloudinary Secret
+Create separate `.env` files in both the `muse-frontend` and `muse-backend` directories.
+
+| Component | Variable | Description |
+| :--- | :--- | :--- |
+| **Frontend** | `VITE_CLERK_PUBLISHABLE_KEY` | Clerk Public Key |
+| | `VITE_BACKEND_URL` | e.g., `http://localhost:5000` |
+| **Backend** | `PORT` | e.g., `5000` |
+| | `CLERK_SECRET_KEY` | Clerk Secret Key |
+| | `NEON_DB_URL` | PostgreSQL Connection String |
+| | `GEMINI_API_KEY` | Google Gemini API Key |
+| | `CLIPDROP_API_KEY` | ClipDrop API Key |
+| | `CLOUDINARY_CLOUD_NAME` | Cloudinary Account Name |
+| | `CLOUDINARY_API_KEY` | Cloudinary API Key |
+| | `CLOUDINARY_API_SECRET` | Cloudinary Secret |
 
 
+### 3. Run Frontend & Backend
 
-
-3. Run Frontend & Backend
-A. Backend Setup
+**A. Backend Setup**
+```bash
 cd muse-backend
 npm install
-npm run server
+npm start 
+```
 
 The server will start on the specified PORT.
 
+**A. Backend Setup**
 
-B. Frontend Setup
-cd ../muse-frontend
+```bash
+cd muse-backend
 npm install
-npm run dev
+npm run dev 
+```
+
 The client application will typically open at http://localhost:5173 (or the port specified by Vite).
 
 
-License & Acknowledgements
-This project is licensed under the MIT License.
+---
 
-Powered by: Clerk | Neon | Cloudinary | Google Gemini | Clipdrop | React | Express | Vite
+## 📄 License & Acknowledgements
+
+This project is licensed under the **MIT License**.
+
+Powered by:
+
+* 🔒 **Clerk**
+* 💾 **Neon**
+* ☁️ **Cloudinary**
+* 🧠 **Google Gemini**
+* 🎨 **Clipdrop**
+* ⚛️ **React**
+* 🚀 **Express**
+* ⚡ **Vite**
 
 <div align="center"> <b>Developed with ❤️ by Aradhya</b> </div>
