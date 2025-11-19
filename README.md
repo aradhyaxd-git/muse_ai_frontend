@@ -52,16 +52,18 @@ Muse.ai is logically split into two service layers. This document serves as the 
 ## 🧠 Core Tech Stack
 
 The platform is built on a modern, high-performance stack for resilience and speed. Visual assets from the local `/assets` directory are used here to represent core technologies.
+<p>
+  <img src="https://skillicons.dev/icons?i=java,javascript,python,cpp,react,nodejs,express,html,css,tailwind,vite,redux,prisma,firebase,spring,mysql,postgres,mongodb,git,github,postman,docker,aws,vercel,linux" />
+</p>
 
 | Layer | Primary Technology | Description | Asset Used (Relative Path) |
 | :--- | :--- | :--- | :--- |
-| **Frontend** | React + Vite | Component-based UI for fast, dynamic rendering. | <img src="./frontend/src/assets/react.svg" alt="React" width="30"/> |
-| **Backend** | Node.js + Express | Highly scalable server-side environment for API routing. | <img src="./frontend/src/assets/logo.svg" alt="Node.js/Express" width="30"/> |
-| **AI/ML** | Google Gemini | Core LLM for all text-based generation and analysis. | <img src="./frontend/src/assets/nvidia.png" alt="Gemini" width="30"/> |
-| **DB** | Neon PostgreSQL | Serverless relational database for persistent data storage. | <img src="./frontend/src/assets/oracle.png" alt="PostgreSQL" width="30"/> |
-| **Auth** | Clerk | Dedicated service for robust user authentication and session management. | <img src="./frontend/src/assets/apple.png" alt="Clerk" width="30"/> |
+| **Frontend** | React + Vite + Tailwind CSS | Component-based UI for fast, dynamic rendering. | <img src="https://skillicons.dev/icons?i=react,vite,tailwind" alt="React" width="30"/> |
+| **Backend** | Node.js + Express | Highly scalable server-side environment for API routing. | <img src="https://skillicons.dev/icons?i=nodejs,express" alt="Node" width="30"/>  |
+| **AI/ML** | Google Gemini | Core LLM for all text-based generation and analysis. | <img src="https://img.shields.io/badge/AI-Gemini-blue?logo=google"  width="30"/> |
+| **DB** | Neon PostgreSQL | Serverless relational database for persistent data storage. |<img src="https://skillicons.dev/icons?i=postgres" alt="Neon" width="30"/> |
 
-* **Additional Frontend:** Tailwind CSS, Framer Motion, React Router DOM.
+* **Additional Frontend:** Framer Motion, React Router DOM.
 * **Additional Backend:** Cloudinary, ClipDrop, PDF-Parse, Multer.
 
 ---
