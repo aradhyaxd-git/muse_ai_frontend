@@ -52,9 +52,6 @@ Muse.ai is logically split into two service layers. This document serves as the 
 ## 🧠 Core Tech Stack
 
 The platform is built on a modern, high-performance stack for resilience and speed. Visual assets from the local `/assets` directory are used here to represent core technologies.
-<p>
-  <img src="https://skillicons.dev/icons?i=java,javascript,python,cpp,react,nodejs,express,html,css,tailwind,vite,redux,prisma,firebase,spring,mysql,postgres,mongodb,git,github,postman,docker,aws,vercel,linux" />
-</p>
 
 | Layer | Primary Technology | Description | Asset Used (Relative Path) |
 | :--- | :--- | :--- | :--- |
